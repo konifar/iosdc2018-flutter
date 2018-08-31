@@ -2,8 +2,7 @@
 
 The unofficial conference app for iOSDC 2018 Tokyo
 
-[0]: https://travis-ci.com/konifar/iosdc2018-flutter.svg?token=rzzprAjeKHUugKX3Lx7N&branch=master
-[1]: https://travis-ci.com/konifar/iosdc2018-flutter
+[![CircleCI](https://circleci.com/gh/konifar/iosdc2018-flutter.svg?style=svg&circle-token=1ea146003ad31569f074e919de3cb75e36b44cd8)](https://circleci.com/gh/konifar/iosdc2018-flutter)
 
 [iOSDC 2018](https://iosdc.jp/2018/) is a conference tailored for developers on 8/31 - 9/2 2018.
 
