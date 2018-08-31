@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iosdc2018flutter/repository/repository_factory.dart';
 
 void main() => runApp(new MyApp());
 
@@ -45,7 +46,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  void testFetch() async {
+    var sessions =
+        await new RepositoryFactory().getSessionRepository().findAll();
+    for (var session in sessions) {
+      print(session.title);
+    }
+  }
+
   void _incrementCounter() {
+    testFetch();
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
