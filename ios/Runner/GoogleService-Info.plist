@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>226353689596-ek8vtbv496d5lgp0t7ri8ro8iadj84jn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.226353689596-ek8vtbv496d5lgp0t7ri8ro8iadj84jn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIviQNW1kK_ibFgk7fuGJ0LpejyMFlSUk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>226353689596</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.konifar.iosdc2018</string>
+	<key>PROJECT_ID</key>
+	<string>iosdc-2018-flutter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iosdc-2018-flutter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:226353689596:ios:c08060b0fe0e122f</string>
+	<key>DATABASE_URL</key>
+	<string>https://iosdc-2018-flutter.firebaseio.com</string>
+</dict>
+</plist>

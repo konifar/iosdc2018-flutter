@@ -1,4 +1,4 @@
-package com.konifar.iosdc2018flutter;
+package com.konifar.iosdc2018;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
