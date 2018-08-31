@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "226353689596",
+    "firebase_url": "https://iosdc-2018-flutter.firebaseio.com",
+    "project_id": "iosdc-2018-flutter",
+    "storage_bucket": "iosdc-2018-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226353689596:android:c08060b0fe0e122f",
+        "android_client_info": {
+          "package_name": "com.konifar.iosdc2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226353689596-8nr9d3t1i7s93isrr8djuphehancl97o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeAGZcifdhN-eut7Q7xZzXYCRmSpX96b0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 name: iosdc2018flutter
-description: A new Flutter project.
+description: iOSDC 2018 Flutter app
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -12,6 +12,14 @@ version: 1.0.0+1
 dependencies:
   flutter:
     sdk: flutter
+
+  url_launcher: 3.0.3
+
+  google_sign_in: 3.0.5
+  firebase_auth: 0.5.19
+  firebase_analytics: 1.0.3
+  cloud_firestore: 0.7.4
+  shared_preferences: 0.4.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
