@@ -1,1 +1,11 @@
-{}
+{
+  "appName": "iOSDC 2018",
+  "appDescription":"8月30日(木) ー 9月2日(日)",
+  "allSessions":"すべてのセッション",
+  "mySchedule":"マイスケジュール",
+  "settings":"設定",
+  "sponsors":"スポンサー",
+  "about":"詳細",
+  "day":"$day日目",
+  "monthDate":"$month月$date日($dayOfMonth)"
+}

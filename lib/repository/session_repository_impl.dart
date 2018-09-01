@@ -21,7 +21,7 @@ class SessionRepositoryImpl extends SessionRepository {
   @override
   Future<List<Session>> findAll() async {
     if (!isDirty && _cache.isNotEmpty) {
-      return new Future.value(_cache);
+      return Future.value(_cache);
     }
 
     final Stream<QuerySnapshot> snapshots =
@@ -49,12 +49,35 @@ class SessionRepositoryImpl extends SessionRepository {
     // Cache
     _cache = sessions;
 
-    return new Future.value(_cache);
+    return Future.value(_cache);
   }
 
   @override
   Future<Session> find(String id) async {
-    if (isDirty) {
+    if (isDirty || _cache.isEmpty) {
+      _cache = await findAll();
+    }
+
+    // Cache
+    Map<String, Session> cacheById = await groupById();
+
+    return cacheById[id];
+  }
+
+  @override
+  Future<List<Session>> findByDate(DateTime dateTime) async {
+    if (isDirty || _cache.isEmpty) {
+      _cache = await findAll();
+    }
+
+    // Cache
+    Map<DateTime, List<Session>> cacheByDate = await groupByDate();
+
+    return cacheByDate[DateTime(dateTime.year, dateTime.month, dateTime.day)];
+  }
+
+  Future<Map<String, Session>> groupById() async {
+    if (isDirty || _cache.isEmpty) {
       _cache = await findAll();
     }
 
@@ -64,11 +87,10 @@ class SessionRepositoryImpl extends SessionRepository {
       cacheById[session.id] = session;
     });
 
-    return cacheById[id];
+    return Future.value(cacheById);
   }
 
-  @override
-  Future<List<Session>> findByDate(DateTime dateTime) async {
+  Future<Map<DateTime, List<Session>>> groupByDate() async {
     if (isDirty || _cache.isEmpty) {
       _cache = await findAll();
     }
@@ -88,6 +110,14 @@ class SessionRepositoryImpl extends SessionRepository {
           .add(session);
     });
 
-    return cacheByDate[DateTime(dateTime.year, dateTime.month, dateTime.day)];
+    return Future.value(cacheByDate);
+  }
+
+  @override
+  Future<List<Session>> findByIds(List<int> ids) async {
+    List<Session> sessions = await findAll();
+    List<Session> favorites =
+        sessions.where((session) => ids.contains(session.id)).toList();
+    return Future.value(favorites);
   }
 }
