@@ -5,12 +5,11 @@
 // are correct.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:iosdc2018flutter/ui/app.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(new MyApp());
-    expect(find.text('1'), findsNothing);
+  group("sample", () {
+    test('sample', () async {
+      expect(1, 1);
+    });
   });
 }
