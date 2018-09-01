@@ -191,6 +191,36 @@ const speaker28 = Speaker(
   "https://fortee.jp/files/iosdc-japan-2018/speaker/1d38d33a-3817-4d28-8d6e-83cebda1039f.jpg",
   "TK_u_nya",
 );
+const speaker29 = Speaker(
+  "29",
+  "ishkawa",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/0600848a-4bd1-486f-907e-48d86f5d4347.jpg",
+  "_ishkawa",
+);
+const speaker30 = Speaker(
+  "30",
+  "松館 大輝",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/79742550-2cf3-4fc9-8493-c95dc9e727fd.jpg",
+  "d_date",
+);
+const speaker31 = Speaker(
+  "31",
+  "Nagado",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/3e602196-6d5e-42bc-afbb-4987e4acc8dc.jpg",
+  "kzmsngd",
+);
+const speaker32 = Speaker(
+  "32",
+  "ohayoukenchan",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/ef7701da-e0d0-411d-a9a5-abb517a0f04f.jpg",
+  "ohayou_kenchan",
+);
+const speaker33 = Speaker(
+  "33",
+  "Shin",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/b6aa8783-9560-4ecd-87dd-e88647da5266.png",
+  "fokotate",
+);
 
 // -------------------- Session --------------------
 List<Session> sessions() {
@@ -215,6 +245,15 @@ List<Session> sessions() {
     session18,
     session19,
     session20,
+    session21,
+    session22,
+    session23,
+    session24,
+    session25,
+    session26,
+    session27,
+    session28,
+    session29,
   ];
 }
 
@@ -333,8 +372,8 @@ var session11 = Session(
   "11",
   "Playground駆動開発のすすめ",
   "ほとんどのiOSエンジニアは、デザイナーさんからデザインを受け取り、その仕様通りに実装すると思います。\nが、それでもやはりデザイン調整は入ります。\nその度にSwiftの長いコンパイルを待ってUI調整を確認するのは、さぞツライ作業です。\n\nそこで、デザイン調整の工程をPlaygroundでやってしまおうというわけです\n...それが「Playground駆動開発」です！",
-  DateTime(2018, 8, 30, 20, 20, 0),
-  DateTime(2018, 8, 30, 20, 35, 0),
+  DateTime(2018, 8, 30, 20, 0, 0),
+  DateTime(2018, 8, 30, 20, 15, 0),
   speaker11,
   roomB,
   duration2,
@@ -355,8 +394,8 @@ var session13 = Session(
   "13",
   "アルゴリズムを通じてよりよいアプリを",
   "アルゴリズムはコーディング面接以外にも使います。適切なアルゴリズムとデータ構造を使用して、アポイントスケジューラまたはコレクションビューの画像コラージュを実装しているかどうかは、優れたユーザーエクスペリエンスの鍵です。 この講演では、WWDC2018でSwiftでアルゴリズムを使用する際の主要なポイントをいくつか見直します。また、SwiftらしいSwiftで、アプリでアルゴリズムを効果的に適用する方法についても説明します。",
-  DateTime(2018, 8, 30),
-  DateTime(2018, 8, 30),
+  DateTime(2018, 8, 30, 20, 20, 0),
+  DateTime(2018, 8, 30, 20, 35, 0),
   speaker13,
   roomB,
   duration2,

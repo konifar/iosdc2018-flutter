@@ -44,6 +44,8 @@ class Seed {
         "speaker": {
           "id": session.speaker.id,
           "name": session.speaker.name,
+          "imageUrl": session.speaker.imageUrl,
+          "twitter_id": session.speaker.twitterId,
         },
         "room": {
           "id": session.room.id,

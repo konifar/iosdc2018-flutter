@@ -7,5 +7,5 @@ abstract class SessionRepository {
 
   Future<Session> find(String id);
 
-  Future<List<Session>> findByRoom(int roomId);
+  Future<List<Session>> findByDate(DateTime dateTime);
 }
