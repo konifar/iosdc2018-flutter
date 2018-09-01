@@ -139,27 +139,27 @@ const speaker19 = Speaker(
 );
 const speaker20 = Speaker(
   "20",
-  "",
-  "",
-  "",
+  "muukii",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/81c3f3ba-6fb7-40a1-b065-e9f504b0dd94.jpg",
+  "muukii0803",
 );
 const speaker21 = Speaker(
   "21",
-  "",
-  "",
-  "",
+  "Yusuke Kita",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/c6c4bf20-19b6-4176-8a0a-fff3efa8702b.png",
+  "kitasuke",
 );
 const speaker22 = Speaker(
   "22",
-  "",
-  "",
-  "",
+  "にわタコ",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/d2e4a086-aec2-4274-b34d-5771d27afae1.jpg",
+  "niwatako",
 );
 const speaker23 = Speaker(
   "23",
-  "",
-  "",
-  "",
+  "malt03",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/6bb009f9-1abc-489d-8b43-1937b33227e4.jpg",
+  "malt03",
 );
 
 // -------------------- Session --------------------
@@ -408,6 +408,50 @@ var session20 = Session(
   DateTime(2018, 8, 31, 11, 50, 0),
   speaker19,
   roomC,
+  duration3,
+  langJA,
+);
+var session21 = Session(
+  "21",
+  "安定したチャットを実現するためのアプリとAPI設計",
+  "SNS系のアプリのほとんどはチャット機能を持っています。\nしかし、チャット機能の実装はUXを求め始めると難しく、複雑になっていきます。\n「順番が狂う」「送信完了までメッセージが表示されない」「受信されない」「重い」など\nデータが蓄積されていくチャットのような機能はどのように実装すべきなのかをお話しします。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker20,
+  roomA,
+  duration3,
+  langJA,
+);
+var session22 = Session(
+  "22",
+  "Swift Compilerの最適化入門 - AllocBoxToStack編",
+  "varとletはSwiftコードを書く上で頻繁に使い、それぞれの特徴を理解してコードを書くことが重要です。しかし、実は適切な使い方をしていなくてもSwift Compilerがあるべき姿に最適化しています。このトークでは、Swift Compilerの最も重要な役割のひとつであるSIL(Swift Intermediate Language)を見ながらどのような最適化が行われているか紹介します。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker21,
+  roomA,
+  duration3,
+  langJA,
+);
+var session23 = Session(
+  "23",
+  "スマホアプリエンジニアだから知ってほしいブロックチェーンと分散型アプリケーション",
+  "数年以内に、皆さんのうちの何割かは、WebやクラウドのAPIを叩くのではなく、ブロックチェーンを叩くアプリケーションを開発するようになるでしょう。そして皆さんのうちほぼ全員が、そのようなアプリケーションを利用するようになるでしょう。\n分散型アプリケーションクライアントとしてのiOSアプリの未来を、実際にブロックチェーンサイドとクライアントサイドでプログラムを見ながらご紹介します。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker22,
+  roomA,
+  duration3,
+  langJA,
+);
+var session24 = Session(
+  "24",
+  "macOSでもっとアプリを作ろう",
+  "趣味でmacOSのネイティブアプリを作ったときの知見を共有します。\nmacOSのネイティブアプリを作る「意味」「楽しみ」「つらみ」「つらみ」あと「つらみ」の話です。\nみんながもっと作ってくれれば、エコシステムやドキュメントが充実して、この世界はもっと幸せになるはずです。\n是非聴きに来て、macOSでアプリを作って、できればライブラリも作って、一緒に世界を幸せにしましょう！",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker23,
+  roomA,
   duration3,
   langJA,
 );
