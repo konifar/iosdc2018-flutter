@@ -19,7 +19,7 @@ class RepositoryFactory {
 
   RepositoryFactory._internal() {
     _firestore = Firestore.instance;
-    _sessionRepository = SessionRepositoryImpl(_firestore, List());
+    _sessionRepository = SessionRepositoryImpl(_firestore);
     _favoriteRepository = FavoriteRepositoryImpl(_firestore, new Map());
   }
 

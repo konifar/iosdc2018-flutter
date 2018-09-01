@@ -139,27 +139,87 @@ const speaker19 = Speaker(
 );
 const speaker20 = Speaker(
   "20",
-  "",
-  "",
-  "",
+  "muukii",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/81c3f3ba-6fb7-40a1-b065-e9f504b0dd94.jpg",
+  "muukii0803",
 );
 const speaker21 = Speaker(
   "21",
-  "",
-  "",
-  "",
+  "Yusuke Kita",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/c6c4bf20-19b6-4176-8a0a-fff3efa8702b.png",
+  "kitasuke",
 );
 const speaker22 = Speaker(
   "22",
-  "",
-  "",
-  "",
+  "にわタコ",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/d2e4a086-aec2-4274-b34d-5771d27afae1.jpg",
+  "niwatako",
 );
 const speaker23 = Speaker(
   "23",
-  "",
-  "",
-  "",
+  "malt03",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/6bb009f9-1abc-489d-8b43-1937b33227e4.jpg",
+  "malt03",
+);
+const speaker24 = Speaker(
+  "24",
+  "kobakei",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/3b12161c-1bbb-4054-b440-9c443229c520.jpg",
+  "kobakei122",
+);
+const speaker25 = Speaker(
+  "25",
+  "家庭の医学",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/78b189be-f473-44ca-81b1-2b69e8f0c6aa.jpg",
+  "kateinoigakukun",
+);
+const speaker26 = Speaker(
+  "26",
+  "Kyohei Ito",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/9f7a89fe-60bc-4e4e-813b-5a44a863060f.jpg",
+  "KyoheiG3",
+);
+const speaker27 = Speaker(
+  "27",
+  "酒井篤",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/fd667335-1677-4d1d-aa6d-0a90ebb8bd3b.jpg",
+  "_atsushisakai",
+);
+const speaker28 = Speaker(
+  "28",
+  "cokaholic",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/1d38d33a-3817-4d28-8d6e-83cebda1039f.jpg",
+  "TK_u_nya",
+);
+const speaker29 = Speaker(
+  "29",
+  "ishkawa",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/0600848a-4bd1-486f-907e-48d86f5d4347.jpg",
+  "_ishkawa",
+);
+const speaker30 = Speaker(
+  "30",
+  "松館 大輝",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/79742550-2cf3-4fc9-8493-c95dc9e727fd.jpg",
+  "d_date",
+);
+const speaker31 = Speaker(
+  "31",
+  "Nagado",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/3e602196-6d5e-42bc-afbb-4987e4acc8dc.jpg",
+  "kzmsngd",
+);
+const speaker32 = Speaker(
+  "32",
+  "ohayoukenchan",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/ef7701da-e0d0-411d-a9a5-abb517a0f04f.jpg",
+  "ohayou_kenchan",
+);
+const speaker33 = Speaker(
+  "33",
+  "Shin",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/b6aa8783-9560-4ecd-87dd-e88647da5266.png",
+  "fokotate",
 );
 
 // -------------------- Session --------------------
@@ -185,6 +245,15 @@ List<Session> sessions() {
     session18,
     session19,
     session20,
+    session21,
+    session22,
+    session23,
+    session24,
+    session25,
+    session26,
+    session27,
+    session28,
+    session29,
   ];
 }
 
@@ -303,8 +372,8 @@ var session11 = Session(
   "11",
   "Playground駆動開発のすすめ",
   "ほとんどのiOSエンジニアは、デザイナーさんからデザインを受け取り、その仕様通りに実装すると思います。\nが、それでもやはりデザイン調整は入ります。\nその度にSwiftの長いコンパイルを待ってUI調整を確認するのは、さぞツライ作業です。\n\nそこで、デザイン調整の工程をPlaygroundでやってしまおうというわけです\n...それが「Playground駆動開発」です！",
-  DateTime(2018, 8, 30, 20, 20, 0),
-  DateTime(2018, 8, 30, 20, 35, 0),
+  DateTime(2018, 8, 30, 20, 0, 0),
+  DateTime(2018, 8, 30, 20, 15, 0),
   speaker11,
   roomB,
   duration2,
@@ -325,8 +394,8 @@ var session13 = Session(
   "13",
   "アルゴリズムを通じてよりよいアプリを",
   "アルゴリズムはコーディング面接以外にも使います。適切なアルゴリズムとデータ構造を使用して、アポイントスケジューラまたはコレクションビューの画像コラージュを実装しているかどうかは、優れたユーザーエクスペリエンスの鍵です。 この講演では、WWDC2018でSwiftでアルゴリズムを使用する際の主要なポイントをいくつか見直します。また、SwiftらしいSwiftで、アプリでアルゴリズムを効果的に適用する方法についても説明します。",
-  DateTime(2018, 8, 30),
-  DateTime(2018, 8, 30),
+  DateTime(2018, 8, 30, 20, 20, 0),
+  DateTime(2018, 8, 30, 20, 35, 0),
   speaker13,
   roomB,
   duration2,
@@ -409,5 +478,104 @@ var session20 = Session(
   speaker19,
   roomC,
   duration3,
+  langJA,
+);
+var session21 = Session(
+  "21",
+  "安定したチャットを実現するためのアプリとAPI設計",
+  "SNS系のアプリのほとんどはチャット機能を持っています。\nしかし、チャット機能の実装はUXを求め始めると難しく、複雑になっていきます。\n「順番が狂う」「送信完了までメッセージが表示されない」「受信されない」「重い」など\nデータが蓄積されていくチャットのような機能はどのように実装すべきなのかをお話しします。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker20,
+  roomA,
+  duration3,
+  langJA,
+);
+var session22 = Session(
+  "22",
+  "Swift Compilerの最適化入門 - AllocBoxToStack編",
+  "varとletはSwiftコードを書く上で頻繁に使い、それぞれの特徴を理解してコードを書くことが重要です。しかし、実は適切な使い方をしていなくてもSwift Compilerがあるべき姿に最適化しています。このトークでは、Swift Compilerの最も重要な役割のひとつであるSIL(Swift Intermediate Language)を見ながらどのような最適化が行われているか紹介します。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker21,
+  roomB,
+  duration3,
+  langJA,
+);
+var session23 = Session(
+  "23",
+  "スマホアプリエンジニアだから知ってほしいブロックチェーンと分散型アプリケーション",
+  "数年以内に、皆さんのうちの何割かは、WebやクラウドのAPIを叩くのではなく、ブロックチェーンを叩くアプリケーションを開発するようになるでしょう。そして皆さんのうちほぼ全員が、そのようなアプリケーションを利用するようになるでしょう。\n分散型アプリケーションクライアントとしてのiOSアプリの未来を、実際にブロックチェーンサイドとクライアントサイドでプログラムを見ながらご紹介します。",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker22,
+  roomC,
+  duration3,
+  langJA,
+);
+var session24 = Session(
+  "24",
+  "macOSでもっとアプリを作ろう",
+  "趣味でmacOSのネイティブアプリを作ったときの知見を共有します。\nmacOSのネイティブアプリを作る「意味」「楽しみ」「つらみ」「つらみ」あと「つらみ」の話です。\nみんながもっと作ってくれれば、エコシステムやドキュメントが充実して、この世界はもっと幸せになるはずです。\n是非聴きに来て、macOSでアプリを作って、できればライブラリも作って、一緒に世界を幸せにしましょう！",
+  DateTime(2018, 8, 31, 13, 30, 0),
+  DateTime(2018, 8, 31, 14, 00, 0),
+  speaker23,
+  roomD,
+  duration3,
+  langJA,
+);
+var session25 = Session(
+  "25",
+  "iOSアプリ内で不正なSSL証明書を検知する",
+  "「HTTPS化していればセキュリティ対策は十分」などと思っていませんか？\nHTTPS化していても、無線LANやネットワーク機器にセキュリティ対策がなされていないと、中間者攻撃によって通信が盗聴・改ざんされるリスクがあります。これを防ぐ方法として、不正なSSL証明書を検知するピン留めという手法があります。\n本発表ではピン留めを実装する手順、またSSL証明書の更新の際に気をつけることを紹介します。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker24,
+  roomA,
+  duration3,
+  langJA,
+);
+var session26 = Session(
+  "26",
+  "コンパイラから紐解くSwift method dispatch",
+  "Swiftには実行するメソッドを効率的に決定する機構があります。\nしかし、静的型付け言語であるにも関わらず動的に決定せざるを得ないパターンや、finalやprivateなどの修飾子がパフォーマンスに影響するパターンなど、実際にはどのような動きをしているのでしょうか。\nこのトークではSwiftコンパイラの中からその疑問を紐解いていきます。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker25,
+  roomB,
+  duration3,
+  langJA,
+);
+var session27 = Session(
+  "27",
+  "grpc-swiftを使ってiOSアプリでも快適なgRPC通信を行う",
+  "Swiftで記述されたiOSアプリでも、grpc-swiftを利用してgRPC通信をある程度手軽に利用可能になります。\ngRPCを利用すると、通常の通信を行うよりも通信速度は速く通信量も少なく済み、更には双方向での通信を行うことができます。\n今回は、gRPCの概要、grpc-swiftの導入方法、実際にプロジェクトで利用する際の応用的なことや、grpc-swiftにコントリビュートしたときの経験談などをお話させていただきます。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker26,
+  roomC,
+  duration3,
+  langJA,
+);
+var session28 = Session(
+  "28",
+  "海外展開を目指すアプリでセキュアで速い画像と動画の閲覧を実現した話",
+  "「家族アルバム みてね」は、徐々に国外にユーザーを拡大しています。常に海外での快適な利用が実現されることを意識して開発していますが、その中でもメディアを高速に配信し・閲覧できることは、最重要課題でした。どのように課題を認識・改善したかの知見をお話ししたいと思います。\n\nアジェンダ\n1. 認識（NewRelicによる計測）\n2. 設計（AWSも含むシステム全体）\n3. アプリ実装について\n4. 成果とさらなる課題",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 35, 0),
+  speaker27,
+  roomD,
+  duration2,
+  langJA,
+);
+var session29 = Session(
+  "29",
+  "とある端末の触覚技術 -フィードバック",
+  "iPhoneの画面上で3DTouchを行うと、ブルッと端末が震えるフィードバックを返してくれます。\nフィードバックが返ってくると、なんとなく気持ち良いですよね笑\nその気持ち良いフィードバックは、iPhoneに搭載されている「Taptic Engine」によって実現されています。\nこのトークでは「Taptic Engine」とはどういった技術で、nどのような場面で使用すれば良いのかという話をします。",
+  DateTime(2018, 8, 31, 14, 40, 0),
+  DateTime(2018, 8, 31, 14, 55, 0),
+  speaker28,
+  roomD,
+  duration2,
   langJA,
 );
