@@ -161,6 +161,36 @@ const speaker23 = Speaker(
   "https://fortee.jp/files/iosdc-japan-2018/speaker/6bb009f9-1abc-489d-8b43-1937b33227e4.jpg",
   "malt03",
 );
+const speaker24 = Speaker(
+  "24",
+  "kobakei",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/3b12161c-1bbb-4054-b440-9c443229c520.jpg",
+  "kobakei122",
+);
+const speaker25 = Speaker(
+  "25",
+  "家庭の医学",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/78b189be-f473-44ca-81b1-2b69e8f0c6aa.jpg",
+  "kateinoigakukun",
+);
+const speaker26 = Speaker(
+  "26",
+  "Kyohei Ito",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/9f7a89fe-60bc-4e4e-813b-5a44a863060f.jpg",
+  "KyoheiG3",
+);
+const speaker27 = Speaker(
+  "27",
+  "酒井篤",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/fd667335-1677-4d1d-aa6d-0a90ebb8bd3b.jpg",
+  "_atsushisakai",
+);
+const speaker28 = Speaker(
+  "28",
+  "cokaholic",
+  "https://fortee.jp/files/iosdc-japan-2018/speaker/1d38d33a-3817-4d28-8d6e-83cebda1039f.jpg",
+  "TK_u_nya",
+);
 
 // -------------------- Session --------------------
 List<Session> sessions() {
@@ -429,7 +459,7 @@ var session22 = Session(
   DateTime(2018, 8, 31, 13, 30, 0),
   DateTime(2018, 8, 31, 14, 00, 0),
   speaker21,
-  roomA,
+  roomB,
   duration3,
   langJA,
 );
@@ -440,7 +470,7 @@ var session23 = Session(
   DateTime(2018, 8, 31, 13, 30, 0),
   DateTime(2018, 8, 31, 14, 00, 0),
   speaker22,
-  roomA,
+  roomC,
   duration3,
   langJA,
 );
@@ -451,7 +481,62 @@ var session24 = Session(
   DateTime(2018, 8, 31, 13, 30, 0),
   DateTime(2018, 8, 31, 14, 00, 0),
   speaker23,
+  roomD,
+  duration3,
+  langJA,
+);
+var session25 = Session(
+  "25",
+  "iOSアプリ内で不正なSSL証明書を検知する",
+  "「HTTPS化していればセキュリティ対策は十分」などと思っていませんか？\nHTTPS化していても、無線LANやネットワーク機器にセキュリティ対策がなされていないと、中間者攻撃によって通信が盗聴・改ざんされるリスクがあります。これを防ぐ方法として、不正なSSL証明書を検知するピン留めという手法があります。\n本発表ではピン留めを実装する手順、またSSL証明書の更新の際に気をつけることを紹介します。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker24,
   roomA,
   duration3,
+  langJA,
+);
+var session26 = Session(
+  "26",
+  "コンパイラから紐解くSwift method dispatch",
+  "Swiftには実行するメソッドを効率的に決定する機構があります。\nしかし、静的型付け言語であるにも関わらず動的に決定せざるを得ないパターンや、finalやprivateなどの修飾子がパフォーマンスに影響するパターンなど、実際にはどのような動きをしているのでしょうか。\nこのトークではSwiftコンパイラの中からその疑問を紐解いていきます。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker25,
+  roomB,
+  duration3,
+  langJA,
+);
+var session27 = Session(
+  "27",
+  "grpc-swiftを使ってiOSアプリでも快適なgRPC通信を行う",
+  "Swiftで記述されたiOSアプリでも、grpc-swiftを利用してgRPC通信をある程度手軽に利用可能になります。\ngRPCを利用すると、通常の通信を行うよりも通信速度は速く通信量も少なく済み、更には双方向での通信を行うことができます。\n今回は、gRPCの概要、grpc-swiftの導入方法、実際にプロジェクトで利用する際の応用的なことや、grpc-swiftにコントリビュートしたときの経験談などをお話させていただきます。",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 50, 0),
+  speaker26,
+  roomC,
+  duration3,
+  langJA,
+);
+var session28 = Session(
+  "28",
+  "海外展開を目指すアプリでセキュアで速い画像と動画の閲覧を実現した話",
+  "「家族アルバム みてね」は、徐々に国外にユーザーを拡大しています。常に海外での快適な利用が実現されることを意識して開発していますが、その中でもメディアを高速に配信し・閲覧できることは、最重要課題でした。どのように課題を認識・改善したかの知見をお話ししたいと思います。\n\nアジェンダ\n1. 認識（NewRelicによる計測）\n2. 設計（AWSも含むシステム全体）\n3. アプリ実装について\n4. 成果とさらなる課題",
+  DateTime(2018, 8, 31, 14, 20, 0),
+  DateTime(2018, 8, 31, 14, 35, 0),
+  speaker27,
+  roomD,
+  duration2,
+  langJA,
+);
+var session29 = Session(
+  "29",
+  "とある端末の触覚技術 -フィードバック",
+  "iPhoneの画面上で3DTouchを行うと、ブルッと端末が震えるフィードバックを返してくれます。\nフィードバックが返ってくると、なんとなく気持ち良いですよね笑\nその気持ち良いフィードバックは、iPhoneに搭載されている「Taptic Engine」によって実現されています。\nこのトークでは「Taptic Engine」とはどういった技術で、nどのような場面で使用すれば良いのかという話をします。",
+  DateTime(2018, 8, 31, 14, 40, 0),
+  DateTime(2018, 8, 31, 14, 55, 0),
+  speaker28,
+  roomD,
+  duration2,
   langJA,
 );
