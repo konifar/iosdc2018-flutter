@@ -21,6 +21,15 @@ class S {
     return s;
   }
 
+  String get settings => "設定";
+  String get allSessions => "すべてのセッション";
+  String get appName => "iOSDC 2018";
+  String get sponsors => "スポンサー";
+  String get appDescription => "8月30日(木) ー 9月2日(日)";
+  String get about => "詳細";
+  String get mySchedule => "マイスケジュール";
+  String monthDate(String month, String date, String dayOfMonth) => "$month月$date日($dayOfMonth)";
+  String day(String day) => "$day日目";
 }
 
 class en extends S {

@@ -12,20 +12,20 @@ import 'package:iosdc2018flutter/repository/favorite_repository.dart';
  */
 class FavoriteRepositoryImpl extends FavoriteRepository {
   // <sessionId, favorite>
-  Map<String, bool> _cache = new Map();
+  Map<String, bool> _cache = Map();
 
   Firestore _firestore;
 
   bool isDirty = true;
 
-  FavoriteRepositoryImpl(this._firestore, this._cache);
+  FavoriteRepositoryImpl(this._firestore);
 
   Future<Map<String, bool>> findAll(String userId) async {
     if (!isDirty && _cache.isNotEmpty) {
-      return new Future.value(_cache);
+      return Future.value(_cache);
     }
 
-    final Map<String, bool> result = new Map();
+    final Map<String, bool> result = Map();
     final Stream<QuerySnapshot> snapshots =
         _firestore.collection("users/$userId/favorites").snapshots();
 
@@ -38,12 +38,12 @@ class FavoriteRepositoryImpl extends FavoriteRepository {
     });
 
     _cache = result;
-    return new Future.value(result);
+    return Future.value(result);
   }
 
   Future<bool> find(String userId, String sessionId) async {
     if (!isDirty && _cache.containsKey(sessionId)) {
-      return new Future.value(_cache[sessionId]);
+      return Future.value(_cache[sessionId]);
     }
 
     final Stream<DocumentSnapshot> snapshots =

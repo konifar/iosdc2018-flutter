@@ -8,4 +8,8 @@ abstract class SessionRepository {
   Future<Session> find(String id);
 
   Future<List<Session>> findByDate(DateTime dateTime);
+
+  Future<Map<DateTime, List<Session>>> groupByDate();
+
+  Future<List<Session>> findByIds(List<int> ids);
 }

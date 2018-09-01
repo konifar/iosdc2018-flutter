@@ -5,7 +5,7 @@ import 'package:iosdc2018flutter/repository/session_repository.dart';
 import 'package:iosdc2018flutter/repository/session_repository_impl.dart';
 
 class RepositoryFactory {
-  static final RepositoryFactory _singleton = new RepositoryFactory._internal();
+  static final RepositoryFactory _singleton = RepositoryFactory._internal();
 
   factory RepositoryFactory() {
     return _singleton;
@@ -20,7 +20,7 @@ class RepositoryFactory {
   RepositoryFactory._internal() {
     _firestore = Firestore.instance;
     _sessionRepository = SessionRepositoryImpl(_firestore);
-    _favoriteRepository = FavoriteRepositoryImpl(_firestore, new Map());
+    _favoriteRepository = FavoriteRepositoryImpl(_firestore);
   }
 
   SessionRepository getSessionRepository() {
